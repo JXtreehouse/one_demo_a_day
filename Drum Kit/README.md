@@ -1,6 +1,6 @@
 # 01 JavaScript Drum Kit 中文指南
 
-> 作者：©[缉熙Soyaine](https://github.com/soyaine)  
+> 参考：©[缉熙Soyaine](https://github.com/soyaine)  @[Wes Bos](https://github.com/wesbos)
 > 简介：[JavaScript30](https://javascript30.com) 是 [Wes Bos](https://github.com/wesbos) 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯 JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。现在你看到的是这系列指南的第 1 篇。完整指南在 [GitHub](https://github.com/soyaine/JavaScript30)，喜欢请 Star 哦♪(^∇^*)
 
 ## 实现效果
@@ -92,7 +92,7 @@ audio.play();
 
 ### 如何使页面按钮恢复原状？
 
-利用一个叫 [`transitionened`](https://developer.mozilla.org/zh-CN/docs/Web/Events/transitionend) 的事件，它在 CSS transition 结束后会被触发。我们就可以利用这个事件，在每次打鼓的效果（尺寸变大、颜色变化）完成之后，去除相应样式。
+利用一个叫 [`transitionend`](https://developer.mozilla.org/zh-CN/docs/Web/Events/transitionend) 的事件，它在 CSS transition 结束后会被触发。我们就可以利用这个事件，在每次打鼓的效果（尺寸变大、颜色变化）完成之后，去除相应样式。
 
 在这个页面中，发生 `transition` 的样式属性不止一个（`box-shadow`, `transform`, `border-color`），所以需要添加一个判断语句，使每发生一次按键事件时，只去除一次样式。
 
@@ -103,3 +103,6 @@ funciton remove(event) {
   // event.target.classList.remove('playing');
 }
 ````
+
+[Array.from()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from?v=example)
+[KeyboardEvent](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)
