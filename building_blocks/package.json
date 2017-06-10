@@ -1,0 +1,15 @@
+{
+  "name": "building_blocks",
+  "version": "1.0.0",
+  "description": "the building block",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "scss",
+    "es6"
+  ],
+  "author": "AlexZ33",
+  "license": "MIT"
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>空气质量报告</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <fieldset id="form-gra-time">
+  	<legend>请选择日期粒度及城市</legend>
+  	<div class="grade">
+  		<label for="">
+	  		<span class="selected">日</span>
+	  		<input type="text" checked="checked" name="gra-time" value="day" type="radio">
+  		</label>
+      <label for="">
+        <span class="selected">周</span>
+        <input type="text" name="gra-time" value="week" type="radio">
+      </label>
+  	  <label for="">
+  	    <span class="selected">月</span>
+  	    <input type="text" name="gra-time" value="month" type="radio">
+  	  </label>
+  	</div>
+  	<div class="select">
+  		<select id="city-select">
+  			<option value="">北京</option>
+  		</select>
+  	</div>
+  </fieldset>
+
+  <div id="api-chart-wrap"></div>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
